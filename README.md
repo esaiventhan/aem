@@ -14,7 +14,7 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate \
 
 Please refer to the "newsComponent" under ui.apps project module.
 
-Please refer to the "How to build" section for the project stepup.
+Please refer to the "How to build" section for the project setup.
 
 ## Requirements
 1. Allow an author to publish a list on news
@@ -63,6 +63,13 @@ The main parts of the template are:
 * ui.launcher: contains glue code that deploys the ui.tests bundle (and dependent bundles) to the server and triggers the remote JUnit execution
 
 ## How to build
+Checkout the "dev" branch from this github repo...
+```$xslt
+git clone https://github.com/esaiventhan/aem.git
+cd aem
+git checkout dev
+```
+
 
 To build all the modules run in the project root directory the following command with Maven 3:
 
