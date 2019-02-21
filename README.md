@@ -41,7 +41,7 @@ Please refer to the "How to build" section for the project setup.
 Further reading - https://helpex.adobe.com/experience-manager/6-4/managing/using/web-accessibility.html
 This should be considered as limitations.
 * Again to comply with WCAG 2.0, all images uploaded or used via AEM DAM will ensure the author or the copy writers to key in the "Alternative Text". This way the less privileged users of internet can better connect with this component's output.
-
+* Beyond this the images are not set for background images since it is not as per the recommendation from W3C for WCAG 2.0 compatibility.
 
 ## Best practices
 * Use out-of-the-box components as much as possible.
