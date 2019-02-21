@@ -53,17 +53,23 @@ body {
 </style>
 <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
      data-sly-call="${clientlib.css @ categories='assignment.base'}"/>
-
-<div class="media">
-    <div>
-        <div class="newsTitle">
-            <p>${properties.newsTitle}</p>
+<div data-sly-test="${properties.newsTitle && properties.newsShortDescription}">
+    <div class="media">
+        <div>
+            <div class="newsTitle">
+                <p>${properties.newsTitle}</p>
+            </div>
+            <div class="newsShortDescription">
+                <p>${properties.newsShortDescription @context='html'}</p>
+            </div>
         </div>
-        <div class="newsShortDescription">
-            <p>${properties.newsShortDescription @context='html'}</p>
+        <div>
+            <img data-sly-resource="${'content' @ resourceType='/apps/assignment/components/content/image'}"/>
         </div>
     </div>
-    <div>
-        <img data-sly-resource="${'content' @ resourceType='/apps/assignment/components/content/image'}"/>
+</div>
+<div data-sly-test="${!properties.newsTitle && !properties.newsShortDescription}">
+    <div class="newsTitle">
+        News is ready for authoring
     </div>
 </div>

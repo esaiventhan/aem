@@ -40,7 +40,8 @@ Please refer to the "How to build" section for the project setup.
 * The fifth requirement is a challenging one, and Adobe accepts that not all Level AAA Success Criteria could be satisfied.
 Further reading - https://helpex.adobe.com/experience-manager/6-4/managing/using/web-accessibility.html
 This should be considered as limitations.
-* Again to comply with WCAG 2.0, all images uploaded or used via AEM DAM will ensure the author or the copy writers to key in the "Alternative Text". This way the less privileged users of internet can better connect with this component's output. 
+* Again to comply with WCAG 2.0, all images uploaded or used via AEM DAM will ensure the author or the copy writers to key in the "Alternative Text". This way the less privileged users of internet can better connect with this component's output.
+
 
 ## Best practices
 * Use out-of-the-box components as much as possible.
@@ -65,8 +66,8 @@ The main parts of the template are:
 ## How to build
 Checkout the "dev" branch from this github repo...
 ```$xslt
-git clone https://github.com/esaiventhan/aem.git
-cd aem
+git clone https://github.com/esaiventhan/assignment.git
+cd assignment
 git checkout dev
 ```
 
@@ -113,3 +114,7 @@ There are three levels of testing contained in the project:
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+
+## When building content
+I have already put some sample contents (/content/assignment/...). But if you want to get started with new contents, then create a root content page with the page template "assignment News Content Page".
+Then create relevant news article underneath it.
