@@ -36,7 +36,7 @@ Please refer to the "How to build" section for the project setup.
 * The first  requirement is already satisfied by the out-of-the-box feature in AEM 6.4 Sites (or siteadmin in classic UI)
 * The second requirement is also satisfied by the inbuilt feature of AEM for digital asset upload or use.
 * The third requirement is a custom feature and is developed in the "newsComponent" located under the ui.apps module.
-* The forth point is also an inbuild feature in Rich Text Editor (RTE) component. This is as per the industry best practices.
+* The forth point is also an inbuilt feature in Rich Text Editor (RTE) component. This is as per the industry best practices.
 * The fifth requirement is a challenging one, and Adobe accepts that not all Level AAA Success Criteria could be satisfied.
 Further reading - https://helpex.adobe.com/experience-manager/6-4/managing/using/web-accessibility.html
 This should be considered as limitations.
@@ -47,11 +47,13 @@ This should be considered as limitations.
 * Use out-of-the-box components as much as possible.
 * Since the author input validation is not complex, drive it via the authoring validation.
 * For future proofing, the client-libs used for this group of components are not commonly located, so that the BAU or the team which is going to maintain know where to look for.
+* Do not set any images as page background images.
 
 ## Notes to consider prior to build and test
 * The project's content path is "/content/assignment/" and so please make sure contents created are placed under this path.
 * Also if the page is not configured (though not required in the dev setup) with DTM's local contexthub, you might see browser's JavaScript console exception (but not to worry).
 * Also I have constructed some sample contents, which you can locate it under /content/assignment/
+* mvn clean test might not work. This is how it is straight from the granite maven archetype (will try to fix when time permits).
 
 ## Modules
 
@@ -93,6 +95,8 @@ Or to deploy only the bundle to the author, run
     mvn clean install -PautoInstallBundle
 
 ## Testing
+
+    mvn clean test // Does not works straight from Granite Maven Archetype. So do not try to run the test.
 
 There are three levels of testing contained in the project:
 
