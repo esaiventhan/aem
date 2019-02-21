@@ -66,8 +66,8 @@ The main parts of the template are:
 ## How to build
 Checkout the "dev" branch from this github repo...
 ```$xslt
-git clone https://github.com/esaiventhan/assignment.git
-cd assignment
+git clone https://github.com/esaiventhan/aem.git
+cd aem
 git checkout dev
 ```
 
