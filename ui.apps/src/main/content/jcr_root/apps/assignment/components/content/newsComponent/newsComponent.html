@@ -1,58 +1,5 @@
-<style>
-
-* { box-sizing: border-box; }
-
-img {
-  max-width: 100%;
-}
-
-p {
-  margin: 0;
-  padding: 0 0 1em 0;
-}
-
-body {
-  padding: 40px;
-  background-color: rgb(255,255,255);
-  color: rgb(61, 63, 112);
-  font: 1.1em/1.4 "Open Sans", sans-serif;
-}
-
-.media {
-  border:2px solid rgba(61, 63, 112,.2);
-  padding: 10px;
-  max-width: 100%;
-  margin: 0 0 1em 0
-}
-
-.img {
-  border: 1px solid rgba(61, 63, 112,.4);
-  float: left;
-  margin: 0 20px 20px 0;
-  width: 200px;
-  height:150px;
-}
-
-.media.grid {
-  display: grid;
-  grid-template-columns: max-content 2fr;
-  grid-gap: 20px;
-}
-
-.media.grid img {
-  margin: 0;
-}
-
-.newsTitle {
-    background: linear-gradient(90deg, deeppink, purple);
-    color: white;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-</style>
 <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
-     data-sly-call="${clientlib.css @ categories='assignment.base'}"/>
+     data-sly-call="${clientlib.css @ categories='assignment.site'}"/>
 <div data-sly-test="${properties.newsTitle && properties.newsShortDescription}">
     <div class="media">
         <div>
