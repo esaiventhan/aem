@@ -1,7 +1,11 @@
 # AEM CMS Project - News and Happenings.
 
+The purpose to host this application in github is to give access to business who wants to check my skills in AEM Development.
+
+My linkedIn profile is - https://www.linkedin.com/in/esaiventhan/
+
 This is a hypothetical project and does not relates to any clients or companies so ever. This is the draft implementation for the News section of the website. This project best works on AEM 6.4 and uses the latest feature pack (6.4.3).
-Some of the outputs might not work well in older version of internet browser.
+Some of the outputs might not work well in older version of internet browser. This code is not pushed to master intentionally as I want viewers to just to refer my work and not to use for production.
 
 This project was created from the Granite Maven Archetype - v17 
 ```$xslt
