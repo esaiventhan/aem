@@ -1,18 +1,14 @@
 <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
      data-sly-call="${clientlib.css @ categories='assignment.site'}"/>
-<div data-sly-test="${properties.newsTitle && properties.newsShortDescription}">
-    <div class="media">
-        <div>
-            <div class="newsTitle">
-                <p>${properties.newsTitle}</p>
-            </div>
-            <div class="newsShortDescription">
-                <p>${properties.newsShortDescription @context='html'}</p>
-            </div>
-        </div>
-        <div>
-            <img data-sly-resource="${'content' @ resourceType='/apps/assignment/components/content/image'}"/>
-        </div>
+<div class="news" data-sly-test="${properties.newsTitle && properties.newsShortDescription}">
+    <div class="newsTitle">
+        <p>${properties.newsTitle} asfas fasf asf asf saf sf as fd asdf sadf</p>
+    </div>
+    <div class="newsShortDescription">
+        <p>${properties.newsShortDescription @context='html'}</p>
+    </div>
+    <div>
+        <img data-sly-resource="${'content' @ resourceType='/apps/assignment/components/content/image'}"/>
     </div>
 </div>
 <div data-sly-test="${!properties.newsTitle && !properties.newsShortDescription}">
