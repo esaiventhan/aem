@@ -1,0 +1,114 @@
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@phone:          ~"only screen and (min-width: @{xs-min})";
+@phone-strict:   ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@tablet:         ~"only screen and (min-width: @{sm-min})";
+@tablet-strict:  ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@desktop:        ~"only screen and (min-width: @{md-min})";
+@desktop-strict: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@large:          ~"only screen and (min-width: @{lg-min})";
+
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
+
+* { box-sizing: border-box; }
+img {
+  max-width: 100%;
+}
+p {
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+body {
+  background-color: rgb(255,255,255);
+  color: rgb(61, 63, 112);
+}
+.img {
+  border: 1px solid rgba(61, 63, 112,.4);
+  float: left;
+  margin: 0 20px 20px 0;
+  width: 200px;
+  height:150px;
+}
+.newsTitle {
+    background: linear-gradient(90deg, deeppink, purple);
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Dosis', serif;
+    width: 100%;
+    font-size: 50px;
+
+    color:white;
+    @media @phone {
+	    font-size: 60px;
+    }
+    @media @phone-strict {
+	    font-size: 60px;
+   	}
+    @media @tablet-strict {
+	    font-size: 75px;
+   	}
+    @media @desktop-strict {
+	    font-size: 60px;
+   	}
+    @media @large {
+	    font-size: 60px;
+   	}
+}
+.newsShortDescription{
+    background: linear-gradient(90deg, #ff4d4d, #ff4d4d);
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Dosis', serif;
+    font-size: 25px;
+    width: 100%;
+    color:white;
+    @media @phone {
+	    font-size: 50px;
+    }
+    @media @phone-strict {
+	    font-size: 50px;
+   	}
+    @media @tablet-strict {
+	    font-size: 50px;
+   	}
+    @media @desktop-strict {
+	    font-size: 35px;
+   	}
+    @media @large {
+	    font-size: 35px;
+   	}
+}
+
+.news {
+	align: center;
+    margin: auto;
+    @media @phone {
+	    width: 98%;
+    }
+    @media @phone-strict {
+	    width: 98%;
+   	}
+    @media @tablet-strict {
+	    width: 98%;
+   	}
+    @media @desktop-strict {
+	    width: 98%;
+   	}
+    @media @large {
+	    width: 98%;
+   	}
+}
+
+A {
+    color: white;
+}
