@@ -43,7 +43,8 @@ Please refer to the "How to build" section for the project setup.
 * The forth point is also an inbuilt feature in Rich Text Editor (RTE) component. This is as per the industry best practices.
 * The fifth requirement is a challenging one, and Adobe accepts that not all Level AAA Success Criteria could be satisfied.
 Further reading - https://helpex.adobe.com/experience-manager/6-4/managing/using/web-accessibility.html
-This should be considered as limitations.
+This should be considered as limitations. Also this might not align well with the online marketing team's expectations too. Consider reading this article - https://www.w3.org/TR/WCAG20-TECHS/G18.html
+* To adhere to WCAG's contrast ration of 4.5:1, the background is set to white color, and the foreground text is set to #767676 gray color.
 * Again to comply with WCAG 2.0, all images uploaded or used via AEM DAM will ensure the author or the copy writers to key in the "Alternative Text". This way the less privileged users of internet can better connect with this component's output.
 * Beyond this the images are not set for background images since it is not as per the recommendation from W3C for WCAG 2.0 compatibility.
 

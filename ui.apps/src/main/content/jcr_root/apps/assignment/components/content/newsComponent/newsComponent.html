@@ -1,5 +1,8 @@
 <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
-     data-sly-call="${clientlib.css @ categories='assignment.site'}"/>
+     data-sly-call="${clientlib.css @ categories='assignment.css'}"/>
+<div class="authoringNote" data-sly-test="${wcmmode.edit}">
+    News is ready for authoring
+</div>
 <div class="news" data-sly-test="${properties.newsTitle && properties.newsShortDescription}">
     <div class="newsTitle">
         <p>${properties.newsTitle}</p>
@@ -9,10 +12,5 @@
     </div>
     <div>
         <img data-sly-resource="${'content' @ resourceType='/apps/assignment/components/content/image'}"/>
-    </div>
-</div>
-<div data-sly-test="${!properties.newsTitle && !properties.newsShortDescription}">
-    <div class="newsTitle">
-        News is ready for authoring
     </div>
 </div>

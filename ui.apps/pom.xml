@@ -33,7 +33,11 @@
     <artifactId>assignment.ui.apps</artifactId>
     <packaging>content-package</packaging>
     <name>assignment - UI apps</name>
-    <description>UI apps package for assignment</description>
+    <description>
+        UI apps package for assignment. This is a showcase project for busines who wants
+        to see my AEM development skills. &lt;br/&gt;This project encompasses Frontend skills like,
+        Javascript, ReactJS, CSS, Boostrap CSS, AEM Component, AEM backend component, OSGi services...
+    </description>
 
     <!-- <scm>
         <connection></connection>
