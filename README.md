@@ -44,8 +44,8 @@ Please refer to the "How to build" section for the project setup.
 * The fifth requirement is a challenging one, and Adobe accepts that not all Level AAA Success Criteria could be satisfied.
 Further reading - https://helpex.adobe.com/experience-manager/6-4/managing/using/web-accessibility.html
 This should be considered as limitations. Also this might not align well with the online marketing team's expectations too. Consider reading this article - https://www.w3.org/TR/WCAG20-TECHS/G18.html
-* To adhere to WCAG's contrast ration of 4.5:1, the background is set to white color, and the foreground text is set to #767676 gray color.
-* Again to comply with WCAG 2.0, all images uploaded or used via AEM DAM will ensure the author or the copy writers to key in the "Alternative Text". This way the less privileged users of internet can better connect with this component's output.
+* As per WCAG 2.0, to attain a contrast ratio of 4.5:1, all background text color is set to white, and all foreground text color is set to #767676 (gray) color.
+* As per WCAG 2.0, all images uploaded or used via AEM DAM ensures the author or the copy writers to key in the "Alt Text". This way the less privileged users of internet can better connect with this component's output.
 * Beyond this the images are not set for background images since it is not as per the recommendation from W3C for WCAG 2.0 compatibility.
 
 ## Best practices
